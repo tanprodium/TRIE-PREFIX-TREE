@@ -1,0 +1,46 @@
+const int max_nodes = ...;
+
+struct Trie
+{
+    struct Node
+    {
+        // child[26] mảng lưu địa chỉ các nút con của nút hiện tại
+        // exist sẽ lưu vị trí cuối cùng của các xâu kết thúc
+    	// tại đỉnh này, cnt là số các xâu đi qua đỉnh này
+    }
+
+    // Hiện trong trie đang có bao nhiêu đỉnh.
+
+    // Tạo nút gốc cho Trie là đỉnh 0 khi khởi tạo Trie.
+
+    // Tạo và trả về giá trị của đỉnh mới được tạo ra.
+
+    // Thủ tục thêm xâu s vào cây Trie:
+            // Nếu cạnh tương ứng chữ cái c chưa tồn tại thì ta tạo ra đỉnh mới.
+            // Có thêm một xâu trong trie có tiền tố là xâu được thể hiện
+            // bằng đỉnh hiện tại.
+        // Đã tìm được đỉnh tương ứng với xâu s, ta tăng biến exist của đỉnh lên 1.
+
+    // Viết Hàm trả về liệu đỉnh pos có thể bị xóa đi hay không, đồng thời xóa xâu s nếu có thể.
+        // Nếu chưa đến đỉnh tương ứng với xâu s thì tiếp tục đệ quy xuống dưới.
+            // Nếu đỉnh con tương ứng bị xóa thì ta gán lại đỉnh tương ứng bằng -1.
+        // Nếu đã đến đỉnh tương ứng với xâu s thì ta giảm biến exist của đỉnh đi 1
+        // Nếu đỉnh đang xét không phải gốc thì ta giảm biến cnt của đỉnh đi 1
+        // và kiểm tra đỉnh có bị xóa đi hay không?
+        // Đỉnh bị xóa nếu không còn xâu nào đi qua nó, nói cách khác là
+        // không còn xâu nào có tiền tố là xâu được thể hiện bởi đỉnh pos.
+
+    // Thủ tục:
+    // Truyền vào xâu s.
+    // Thủ tục sẽ nhận xâu s và kiểm tra xâu x có trong Trie hay không.
+    // Nếu có thì xóa xâu s ra khỏi Trie.
+        // Kiểm tra xâu s có trong Trie hay không.
+        // Gọi hàm đệ quy xóa xâu s khỏi Trie.
+
+    // Hàm:
+    // Nhận vào xâu s.
+    // Hàm sẽ trả về “true” nếu có xâu s trong cây Trie,
+    // ngược lại trả về false.
+
+        // Kiểm tra có xâu nào kết thúc tại đỉnh này hay không.
+};
